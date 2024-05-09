@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="background">#ffffff</property>
+    <property name="height">400</property>
+    <property name="width">500</property>
+    <child>
+      <object class="ttk.Label" id="label3">
+        <property name="image">logo.png</property>
+        <property name="justify">center</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">50</property>
+          <property name="width">50</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label4">
+        <property name="background">#0000ff</property>
+        <property name="font">{Sylfaen} 16 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">IMAGE COMPRESSER</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">50</property>
+          <property name="width">450</property>
+          <property name="x">51</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="com" named="True">
+        <property name="background">#0080ff</property>
+        <property name="compound">center</property>
+        <property name="cursor">hand2</property>
+        <property name="font">{Cambria} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">COMPRESS</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">90</property>
+          <property name="x">290</property>
+          <property name="y">60</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="con" named="True">
+        <property name="background">#0080ff</property>
+        <property name="compound">center</property>
+        <property name="cursor">hand2</property>
+        <property name="font">{Cambria} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">CONVERT</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">90</property>
+          <property name="x">400</property>
+          <property name="y">60</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="convert_frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">290</property>
+          <property name="width">500</property>
+          <property name="y">110</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="select_icon" named="True">
+            <property name="cursor">hand2</property>
+            <property name="image">file icon1.png</property>
+            <property name="text" translatable="yes">label1</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">120</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label10" named="True">
+            <property name="background">#0080ff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">TYPE :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">10</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Combobox" id="type" named="True">
+            <property name="values">SELECT PNG JPG JPEF PDF</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="x">120</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="con_save" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">190</property>
+              <property name="y">250</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="select_con_file" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SELECT FILE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="compress_frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">290</property>
+          <property name="width">500</property>
+          <property name="y">110</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="select_com_icon" named="True">
+            <property name="cursor">hand2</property>
+            <property name="image">file icon1.png</property>
+            <property name="text" translatable="yes">label1</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">120</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Scale" id="quality" named="True">
+            <property name="background">#0080ff</property>
+            <property name="cursor">hand2</property>
+            <property name="digits">2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="from_">1</property>
+            <property name="length">5</property>
+            <property name="orient">horizontal</property>
+            <property name="to">99</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="width">300</property>
+              <property name="x">130</property>
+              <property name="y">190</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label7" named="True">
+            <property name="background">#0080ff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">QUALITY :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">10</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="com_save" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">190</property>
+              <property name="y">250</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="select_com_file" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SELECT FILE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="resize_frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">290</property>
+          <property name="width">500</property>
+          <property name="y">110</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label1" named="True">
+            <property name="cursor">hand2</property>
+            <property name="image">file icon1.png</property>
+            <property name="text" translatable="yes">label1</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">120</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">10</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label2" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Width :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">10</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="res_save" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">190</property>
+              <property name="y">250</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="select_res_file" named="True">
+            <property name="background">#0000ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SELECT FILE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">120</property>
+              <property name="x">190</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label5" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Hight :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">280</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="width" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Cambria} 14 {}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="bordermode">outside</property>
+              <property name="height">30</property>
+              <property name="width">80</property>
+              <property name="x">100</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="hight" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">80</property>
+              <property name="x">370</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Menubutton" id="pdf_bt" named="True">
+        <property name="background">#c0c0c0</property>
+        <property name="compound">center</property>
+        <property name="cursor">hand2</property>
+        <property name="font">{Cambria} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="justify">center</property>
+        <property name="text" translatable="yes">PDF</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">30</property>
+          <property name="width">50</property>
+          <property name="x">10</property>
+          <property name="y">60</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="pdf_to_image_frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">290</property>
+          <property name="width">500</property>
+          <property name="y">110</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label8" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">File Location :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">150</property>
+              <property name="x">10</property>
+              <property name="y">20</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="p_i_save" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">190</property>
+              <property name="y">200</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label9" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 14 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">File Name :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">130</property>
+              <property name="x">10</property>
+              <property name="y">100</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="file_location" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">450</property>
+              <property name="x">20</property>
+              <property name="y">60</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="file_name" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">450</property>
+              <property name="x">20</property>
+              <property name="y">140</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="pfd_text_frame" named="True">
+        <property name="background">#ffffff</property>
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="height">290</property>
+          <property name="width">500</property>
+          <property name="y">110</property>
+        </layout>
+        <child>
+          <object class="tk.Label" id="label11" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">File Location :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">120</property>
+              <property name="x">10</property>
+              <property name="y">20</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="p_t_save" named="True">
+            <property name="background">#0080ff</property>
+            <property name="compound">center</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">SAVE</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">30</property>
+              <property name="width">90</property>
+              <property name="x">190</property>
+              <property name="y">250</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label12" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">File Name :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">100</property>
+              <property name="x">10</property>
+              <property name="y">85</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="file_loc" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">450</property>
+              <property name="x">20</property>
+              <property name="y">55</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="file_nam" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">450</property>
+              <property name="x">20</property>
+              <property name="y">120</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="label13" named="True">
+            <property name="background">#ffffff</property>
+            <property name="cursor">hand2</property>
+            <property name="font">{Cambria} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">Text file name :</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">120</property>
+              <property name="x">20</property>
+              <property name="y">150</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="des_name" named="True">
+            <property name="background">#c0c0c0</property>
+            <property name="font">{Arial} 12 {bold}</property>
+            <property name="foreground">#000000</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">25</property>
+              <property name="width">450</property>
+              <property name="x">20</property>
+              <property name="y">180</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
